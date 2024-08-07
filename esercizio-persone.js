@@ -59,6 +59,9 @@ for(let i = 0 ; i < persone.length ; i ++ ){
 
 };
 
+
+
+
 // console.log(maggiorenni)
 
 
