@@ -25,23 +25,29 @@ console.log('ciao')
 
   const mammiferi = []
 
-//   Dobbiamo ciclare come prima cosa l'array con il ciclo for
+//   VERSIONE CON FOR: Dobbiamo ciclare come prima cosa l'array con il ciclo for
 
-for(let i=0; i < animali.length; i ++ ){
 
-    const animaleScelto = animali [i];
+// for(let i=0; i < animali.length; i ++ ){
+
+//     const animaleScelto = animali [i];
+//     console.log(animaleScelto)
+
+//     if (animaleScelto.classe === 'mammiferi') {
+//         mammiferi.push(animaleScelto)
+//     }
+
+// };
+
+//  VERSIONE CON FOREACH: per ogni animale invoca questa funzione
+
+animali.forEach(function(animaleScelto){
     console.log(animaleScelto)
-
-    if (animaleScelto.classe === 'mammiferi') {
+    if(animaleScelto.classe ==='mammiferi') {
         mammiferi.push(animaleScelto)
     }
-
-};
-
-// animali.forEach(function(classe){
-//     const animali = capitalize(classe)
-//     mammiferi = push(animali)
-// })
+    
+});
 
 
 console.log(mammiferi)
